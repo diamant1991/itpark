@@ -83,6 +83,35 @@
 		height: 90px;
 	}
 }
+@media(min-width: 1200px){
+	header{
+		*{
+			transition: all .3s ease-in-out;
+		}
+
+		&.is-fixed{
+			position: fixed;
+			background-color: rgba(25, 25, 25, 0.5);
+			height: 50px;
+			padding: 10px 0;
+
+			.static-logo{
+				display: none;
+			}
+			.fixed-logo{
+				display: inline;
+			}
+			.nav{
+				display: inline-block;
+		    top: -34px;
+		    margin-left: 60px;
+			}
+			.logo{
+				margin-top: 3px;
+			}
+		}
+	}
+}
 @media(max-width: 1199px){
 	body{
 		font-size: 14px;

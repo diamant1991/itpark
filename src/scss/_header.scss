@@ -62,32 +62,6 @@
 	left: 0;
 	top: 0;
 	transition: all .3s ease-in-out;
-
-	*{
-		transition: all .3s ease-in-out;
-	}
-
-	&.is-fixed{
-		position: fixed;
-		background-color: rgba(25, 25, 25, 0.5);
-		height: 50px;
-		padding: 10px 0;
-
-		.static-logo{
-			display: none;
-		}
-		.fixed-logo{
-			display: inline;
-		}
-		.nav{
-			display: inline-block;
-	    top: -34px;
-	    margin-left: 60px;
-		}
-		.logo{
-			margin-top: 3px;
-		}
-	}
 }
 .social-item{
 	width: 22px;

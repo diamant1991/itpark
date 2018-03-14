@@ -33,13 +33,15 @@ $('.close-panel').click(function (e) {
     $('.mobile-panel').hide();
 });
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 0) {
-        $('.header').addClass("is-fixed");
-    } else {
-        $('.header').removeClass("is-fixed");
-    }
-});
+if (window.matchMedia('(min-width: 1200px)').matches) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('.header').addClass("is-fixed");
+        } else {
+            $('.header').removeClass("is-fixed");
+        }
+    });
+}
 
 }());
 //# sourceMappingURL=main.js.map
