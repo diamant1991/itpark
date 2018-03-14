@@ -1,0 +1,59 @@
+
+.review{
+	&__tab{
+		padding-top: 20px;
+		margin-bottom: 50px;
+
+		&__item{
+			&.is-active{
+				.review__tab__text{
+					color: $grey;
+					font-family: $regular;
+				}
+			}
+			&:hover{
+				.review__tab__text{
+					color: $darkred;
+					text-decoration: underline;
+				}
+			}
+		}
+		&__img{
+			width: 60px;
+			div{
+				height: 105px;
+				background-size: cover;
+				background-position: 50%;
+				background-repeat: no-repeat;
+			}
+		}
+		&__text{
+			padding-left: 10px;
+			font-size: 18px;
+			color: $blue;
+			font-family: $bold;
+		}
+	}
+	&__content{
+		&__img{
+			width: 130px;
+
+			div{
+				height: 150px;
+				background-size: cover;
+				background-position: 50%;
+				background-repeat: no-repeat;
+			}
+		}
+		&__text{
+			padding-left: 40px;
+		}
+	}
+	&__more{
+		text-align: right;
+	}
+}
+.d-table-top{
+	display: table-cell;
+	vertical-align: top;
+}

@@ -1,0 +1,27 @@
+.engine-icon{
+	width: 100px;
+	height: 30px;
+}
+.footer{
+	&__top{
+		font-size: 22px;
+		color: #4c4d52;
+	}
+	&__contact{
+		a{
+			color: #4c4d52;
+			border-bottom: 1px solid #4c4d52;
+		}
+	}
+	&__bottom{
+		margin-top: 40px;
+		padding-bottom: 25px;
+	}
+}
+.copyright{
+	font-family: $bold;
+
+	a{
+		color: $blue;
+	}
+}

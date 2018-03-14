@@ -1,0 +1,32 @@
+@import "variables";
+
+.news{
+	margin-bottom: 30px;
+	
+	&__item{
+		font-size: 18px;
+
+		+ .news__item{
+			margin-top: 70px;
+		}
+
+		a{
+			font-family: $bold;
+			color: #fff;
+
+			&:hover{
+				color: $blue;
+			}
+		}
+		p{
+			margin-top: 20px;
+		}
+		&--black{
+			color: $grey;
+
+			a{
+				color: $grey;
+			}
+		}
+	}
+}

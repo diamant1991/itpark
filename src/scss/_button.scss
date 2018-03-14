@@ -1,0 +1,40 @@
+@import "variables";
+
+.btn{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 20px;
+	text-align: center;
+	min-width: 300px;
+	font-size: 18px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	font-family: $regular;
+	border-radius: 5px;
+
+	&--red{
+		background: $red;
+		color: #fff;
+
+		&:hover{
+			background: darken($red, 10%);
+		}
+	}
+	&--full{
+		width: 100%;
+	}
+	&--blue{
+		min-width: 130px;
+		background: none;
+		border: 1px solid $blue;
+		color: $blue;
+		font-family: $bold;
+		padding: 10px;
+		
+		&:hover{
+			background: $blue;
+			color: #fff;
+		}
+	}
+}

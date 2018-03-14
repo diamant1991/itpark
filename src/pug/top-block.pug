@@ -1,0 +1,75 @@
+.top-block
+	.video-background
+		.video-foreground
+			<video autoplay="" loop="" id="bgvid">
+				<source src="video.mp4" type="video/mp4">
+			</video>
+	header.header
+		.container
+			.top-panel.row.no-gutters.justify-content-between.align-items-center
+				.logo
+					a(href="#")
+						img(src="images/logo.png", alt="").hidden-xs.static-logo
+						img(src="images/itpark74-logo-small-white.svg", alt="").visible-xs
+						img(src="images/itpark74-logo-small.svg", alt="").fixed-logo
+				.hamburger-box.visible-xs
+					.hamburger-inner
+				.top-block__contact.hidden-xs
+					.phone.d-inline-block 
+						a(href="#") 8 (351) 220-33-73
+					.top-block__social.d-inline-block
+						a(href="#").d-inline-block
+							img(src="images/vk-social-logotype.svg", alt="").svg.social-item
+						a(href="#").d-inline-block
+							img(src="images/facebook-app-logo.svg", alt="").svg.social-item
+			nav.nav.hidden-xs
+				ul.nav__menu.clearfix
+					+item("О технопарке")
+					+item("Аренда офиса")
+					+item("Коворкинг")
+					+item("Бизнес-инкубатор")
+					+item("События")
+					+item("Контакты")
+	.top-block__title.row.no-gutters.align-items-center
+		.container
+			h1 ИТ-Парк — место притяжения и развития информационных технологий Челябинска
+	.top-block__info
+		.container
+			.row.no-gutters.justify-content-between.align-items-center
+				.top-block__form
+					form
+						.top-block__form__title Номер телефона
+						.form-group
+							input(type="text", placeholder="8 (000) 000-00-00").form-control.form-control--top.d-inline-block
+							button(type="submit").btn.btn--red Записаться на экскурсию
+						.top-block__form__title
+							| Бесплатно покажем как устроен ИТ-парк, и угостим вкусным кофе ;-)
+				.top-block__link
+					.top-block__link__item.d-inline-block
+						a(href="#")
+							span.top-block__link__icon.d-table-cell 
+								img(src="images/calendar.svg", alt="").svg.calendar-icon
+							span.top-block__link__name.d-table-cell 
+								| Календарь событий Технопарка
+					.top-block__link__item.d-inline-block
+						a(href="#")
+							span.top-block__link__icon.d-table-cell 
+								img(src="images/normspasibot.svg", alt="").svg.bot-icon
+							span.top-block__link__name.d-table-cell 
+								| Бот-помощник в Telegram
+.mobile-panel
+	.close-panel X
+	ul.mobile-panel__menu
+		+item("О технопарке")
+		+item("Аренда офиса")
+		+item("Коворкинг")
+		+item("Бизнес-инкубатор")
+		+item("События")
+		+item("Контакты")
+	.phone
+		a(href="#") 8 (351) 220-33-73
+	.top-block__social
+		a(href="#").d-inline-block
+			img(src="images/vk-social-logotype.svg", alt="").svg.social-item
+		a(href="#").d-inline-block
+			img(src="images/facebook-app-logo.svg", alt="").svg.social-item

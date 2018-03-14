@@ -1,0 +1,29 @@
+.advantages{
+	margin-bottom: 130px;
+
+	&__item{
+		text-align: center;
+		height: 100%;
+		position: relative;
+		min-height: 180px;
+		margin-bottom: 70px;
+		padding: 0 15px;
+	}
+	&__number{
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 180px;
+	  font-family: $bold;
+	  color: rgba(215, 0, 0, 0.5);
+	}
+	&__text{
+		font-size: 28px;
+		font-family: $bold;
+		color: #4c4c52;
+		z-index: 3;
+		position: relative;
+	}
+}
