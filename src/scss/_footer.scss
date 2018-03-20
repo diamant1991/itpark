@@ -11,6 +11,11 @@
 		a{
 			color: #4c4d52;
 			border-bottom: 1px solid #4c4d52;
+
+			&:hover{
+				color: $darkred;
+				border-color: $darkred;
+			}
 		}
 	}
 	&__bottom{
@@ -20,6 +25,7 @@
 }
 .copyright{
 	font-family: $bold;
+	font-size: 18px;
 
 	a{
 		color: $blue;

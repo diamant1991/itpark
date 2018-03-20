@@ -159,6 +159,7 @@ html(class=html.classList)&attributes(html.attrs)
 				meta(name="msapplication-square310x310logo" content=meta.msapplicationSquare310x310logo)
 			if meta.msapplicationNotification
 				meta(name="msapplication-notification" content=meta.msapplicationNotification)
+			link(rel="icon", href="images/favicon/favicon.png")
 		title
 			= title
 		block links
@@ -249,5 +250,6 @@ html(class=html.classList)&attributes(html.attrs)
 		block content
 		block scripts
 			script(src="js/vendor.js?v=" + Date.now())
+			script(src="js/likely.js")
 			script(src="js/main.js?v=" + Date.now())
 		block body-end

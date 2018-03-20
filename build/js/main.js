@@ -42,6 +42,16 @@ if (window.matchMedia('(min-width: 1200px)').matches) {
         }
     });
 }
+$('.scroll-link').click(function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top - 50;
+    if ($('.mobile-panel').is(':visible')) {
+        top = $(id).offset().top;
+        $('.mobile-panel').hide();
+    }
+    $('body,html').animate({ scrollTop: top }, 1000);
+});
 
 }());
 //# sourceMappingURL=main.js.map

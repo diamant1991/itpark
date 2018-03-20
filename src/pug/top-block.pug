@@ -9,7 +9,7 @@
 			.top-panel.row.no-gutters.justify-content-between.align-items-center
 				.logo
 					a(href="#")
-						img(src="images/logo.png", alt="").hidden-xs.static-logo
+						img(src="images/itpark74-logo-white.svg", alt="").hidden-xs.static-logo
 						img(src="images/itpark74-logo-small-white.svg", alt="").visible-xs
 						img(src="images/itpark74-logo-small.svg", alt="").fixed-logo
 				.hamburger-box.visible-xs
@@ -24,12 +24,18 @@
 							img(src="images/facebook-app-logo.svg", alt="").svg.social-item
 			nav.nav.hidden-xs
 				ul.nav__menu.clearfix
-					+item("О технопарке")
-					+item("Аренда офиса")
-					+item("Коворкинг")
-					+item("Бизнес-инкубатор")
-					+item("События")
-					+item("Контакты")
+					li
+						a(href="#techno").scroll-link О технопарке
+					li
+						a(href="#arenda").scroll-link Аренда офиса
+					li
+						a(href="#kovorking").scroll-link Коворкинг
+					li
+						a(href="#business").scroll-link Бизнес-инкубатор
+					li
+						a(href="#event").scroll-link События
+					li
+						a(href="#contacts").scroll-link Контакты
 	.top-block__title.row.no-gutters.align-items-center
 		.container
 			h1 ИТ-Парк — место притяжения и развития информационных технологий Челябинска
@@ -60,12 +66,18 @@
 .mobile-panel
 	.close-panel X
 	ul.mobile-panel__menu
-		+item("О технопарке")
-		+item("Аренда офиса")
-		+item("Коворкинг")
-		+item("Бизнес-инкубатор")
-		+item("События")
-		+item("Контакты")
+		li
+			a(href="#techno").scroll-link О технопарке
+		li
+			a(href="#arenda").scroll-link Аренда офиса
+		li
+			a(href="#kovorking").scroll-link Коворкинг
+		li
+			a(href="#business").scroll-link Бизнес-инкубатор
+		li
+			a(href="#event").scroll-link События
+		li
+			a(href="#contacts").scroll-link Контакты
 	.phone
 		a(href="#") 8 (351) 220-33-73
 	.top-block__social
