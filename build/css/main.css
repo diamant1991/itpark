@@ -1465,10 +1465,13 @@ img {
   left: 0;
   top: 0;
   padding: 15px; }
+  .mobile-panel__logo {
+    margin-bottom: 25px; }
 
 .mobile-panel__menu {
   margin-bottom: 20px;
-  font-family: "AvenirNextCyrBold"; }
+  font-family: "AvenirNextCyrBold";
+  font-size: 16px; }
   .mobile-panel__menu li + li {
     margin-top: 15px; }
   .mobile-panel__menu a {
@@ -1481,7 +1484,10 @@ img {
   z-index: 2;
   right: 10px;
   top: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background: url(../images/close.svg) no-repeat; }
 
 video {
   position: absolute;

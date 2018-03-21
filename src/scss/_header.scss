@@ -242,10 +242,15 @@
 	left: 0;
 	top: 0;
 	padding: 15px;
+
+	&__logo{
+		margin-bottom: 25px;
+	}
 }
 .mobile-panel__menu{
 	margin-bottom: 20px;
 	font-family: $bold;
+	font-size: 16px;
 
 	li{
 		+ li{
@@ -267,6 +272,9 @@
 	right: 10px;
 	top: 10px;
 	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	background: url(../images/close.svg)no-repeat;
 }
 
 
