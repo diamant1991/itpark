@@ -5,10 +5,15 @@
 		margin-bottom: 50px;
 
 		&__item{
+			cursor: pointer;
+
 			&.is-active{
+				cursor: default;
+				
 				.review__tab__text{
-					color: $grey;
+					color: $grey !important;
 					font-family: $regular;
+					text-decoration: none !important;
 				}
 			}
 			&:hover{
@@ -35,6 +40,14 @@
 		}
 	}
 	&__content{
+
+		&__item{
+			display: none;
+
+			&.active{
+				display: block;
+			}
+		}
 		&__img{
 			width: 130px;
 

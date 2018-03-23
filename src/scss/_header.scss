@@ -114,7 +114,7 @@
 		}
 		a{
 			color: $blue;
-			border-bottom: 1px dashed;
+			border-bottom: 1px dotted rgba(255,255,255,0.5);
 
 			&:hover{
 				color: $darkred;
@@ -170,8 +170,8 @@
 .hamburger-box {
   position: fixed;
   display: inline-block;
-  width: 30px;
-  height: 24px;
+  width: 18px;
+  height: 16px;
   cursor: pointer;
   user-select: none;
   z-index: 5;
@@ -196,7 +196,7 @@
   display: block;
   margin-top: -2px;
   position: absolute;
-  width: 30px;
+  width: 18px;
   height: 2px;
   transition-timing-function: ease;
   transition-duration: .15s;
@@ -207,14 +207,14 @@
   &:before{
   	content: "";
   	position: absolute;
-    width: 30px;
+    width: 18px;
     height: 2px;
     transition-timing-function: ease;
     transition-duration: .15s;
     transition-property: transform;
     background-color: $blue;
     top: -10px;
-    top: 8px;
+    top: 6px;
     transition-timing-function: ease;
     transition-duration: .15s;
     transition-property: transform,opacity;
@@ -222,14 +222,14 @@
   &:after{
   	content: "";
   	position: absolute;
-    width: 30px;
+    width: 18px;
     height: 2px;
     transition-timing-function: ease;
     transition-duration: .15s;
     transition-property: transform;
     background-color: $blue;
     bottom: -10px;
-    top: 17px;
+    top: 12px;
   }
 }
 .mobile-panel{
@@ -260,6 +260,7 @@
 
 	a{
 		color: $blue;
+		border-bottom: 1px dotted rgba(255,255,255,0.5);
 
 		&:hover{
 			color: #d0021b;

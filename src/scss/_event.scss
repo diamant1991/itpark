@@ -34,13 +34,14 @@
 					path,
 					g path{
 						fill: $darkred;
+						stroke: $darkred;
 					}
 				}
 			}
 			&--last{
 				position: absolute;
 				z-index: 2;
-				bottom: 20px;
+				bottom: 10px;
 				width: 100%;
 			}
 		}
@@ -62,6 +63,7 @@
 	}
 }
 .placeholder-img {
-  width: 145px;
-  height: 135px;
-}
+  width: 170px;
+  height: 155px;
+  margin-left: -25px;
+ }

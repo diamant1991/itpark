@@ -24,6 +24,23 @@
 						a(href="#") Первая стратегическая сессия по программированию 
 						p.date 15 ноября 2016
 		.row.justify-content-between
+			.col-20.col-xl-3.col-lg-3.visible-xs
+				.event__link
+					.event__link__item
+						a(href="#")
+							.event__link__name
+								.link Отчёты по всем событиям
+							.event__link__icon
+								img(src="images/calendar.svg", alt="").svg.event-calendar
+					.event__link__item.event__link__item--last
+						a(href="#")
+							.event__link__name
+								.link 
+									| Виртуальная экскурсия 
+									br
+									| по конференц-залу
+							.event__link__icon
+								img(src="images/placeholder_.svg", alt="").svg.placeholder-img
 			.col-66.col-xl-7.col-lg-7
 				.text-block
 					p
@@ -37,7 +54,7 @@
 							input(type="text", placeholder="8 (000) 000-00-00").form-control.form-control--black
 						.form-group
 							button(type="submit").btn.btn--red.btn--full Связаться с менеджером
-			.col-20.col-xl-3.col-lg-3
+			.col-20.col-xl-3.col-lg-3.hidden-xs
 				.event__link
 					.event__link__item
 						a(href="#")
@@ -48,7 +65,10 @@
 					.event__link__item.event__link__item--last
 						a(href="#")
 							.event__link__name
-								.link Виртуальная экскурсия по конференц-залу
+								.link 
+									| Виртуальная экскурсия 
+									br
+									| по конференц-залу
 							.event__link__icon
 								img(src="images/placeholder_.svg", alt="").svg.placeholder-img
 		.form-item.visible-md

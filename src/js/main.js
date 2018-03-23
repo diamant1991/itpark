@@ -32,7 +32,7 @@ $('.close-panel').click(function(e) {
   $('.mobile-panel').hide()
 });
 
-if(window.matchMedia('(min-width: 1200px)').matches){
+if(window.matchMedia('(min-width: 768px)').matches){
     $(window).scroll(function () {
       if ($(this).scrollTop() > 0) {
         $('.header').addClass("is-fixed");
@@ -50,4 +50,13 @@ $('.scroll-link').click(function(event) {
       $('.mobile-panel').hide()
   }
   $('body,html').animate({scrollTop: top}, 1000);
+});
+
+$('.review__tab__item').click(function (e) {
+  e.preventDefault();
+  var tab = $(this).attr('data-tab');
+  $('.review__tab__item').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.review__content__item').removeClass('active');
+  $('' + tab).addClass('active');
 });

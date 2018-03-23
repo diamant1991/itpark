@@ -10,6 +10,10 @@
 	font-size: 18px;
 	color: #fff;
 
+	&::placeholder{
+		color: #a6b1c2;
+	}
+
 	&:focus{
 		border-color: #006eff;
 	}

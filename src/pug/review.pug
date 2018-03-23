@@ -3,35 +3,54 @@
 		h2 Авторитетные мнения об ИТ-парке
 		.review__tab.row.hidden-md
 			.col-lg-3
-				.review__tab__item.is-active
+				.review__tab__item.is-active(data-tab="#tab1")
 					.review__tab__img.d-table-cell
 						div(style="background-image: url(http://via.placeholder.com/60x105)")
 					.review__tab__text.d-table-cell 
 						| Козлов Александр Сергеевич, Министр Информационных Технологий Челябинска
 			.col-lg-3
-				.review__tab__item
+				.review__tab__item(data-tab="#tab2")
 					.review__tab__img.d-table-cell
 						div(style="background-image: url(http://via.placeholder.com/60x105)")
 					.review__tab__text.d-table-cell 
 						| Сергеев Иван Сергеевич, ректор факультета "Дизайн" в МГУ
 			.col-lg-3
-				.review__tab__item
+				.review__tab__item(data-tab="#tab3")
 					.review__tab__img.d-table-cell
 						div(style="background-image: url(http://via.placeholder.com/60x105)")
 					.review__tab__text.d-table-cell 
 						| Сергеева Иваннна Сергеевна, ректор факультета "Архитектура"
 			.col-lg-3
-				.review__tab__item
+				.review__tab__item(data-tab="#tab4")
 					.review__tab__img.d-table-cell
 						div(style="background-image: url(http://via.placeholder.com/60x105)") 
 					.review__tab__text.d-table-cell 
 						| Сергеев Иван Сергеевич, директор МГУ
 		.review__content.hidden-md
-			.review__content__img.d-table-top
-				div(style="background-image: url(http://via.placeholder.com/130x150)") 
-			.review__content__text.text-block.d-table-top
-				p
-					| «Информационное общество-2017: Умный регион. Безопасность и инновации». Качественно выполненная работа на высоком профессиональном уровне, гибкий подход к делу, восприимчивость к пожеланиям, умение решать проблемы в кратчайший срок позволяют высоко оценить наше сотрудничество с ООО «Технопарк информационных технологий»
+			.review__content__item.active#tab1
+				.review__content__img.d-table-top
+					div(style="background-image: url(http://via.placeholder.com/130x150)") 
+				.review__content__text.text-block.d-table-top
+					p
+						| «Информационное общество-2017: Умный регион. Безопасность и инновации». Качественно выполненная работа на высоком профессиональном уровне, гибкий подход к делу, восприимчивость к пожеланиям, умение решать проблемы в кратчайший срок позволяют высоко оценить наше сотрудничество с ООО «Технопарк информационных технологий»
+			.review__content__item#tab2
+				.review__content__img.d-table-top
+					div(style="background-image: url(http://via.placeholder.com/130x150)") 
+				.review__content__text.text-block.d-table-top
+					p
+						|   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facilis maiores reprehenderit! Fuga vero harum ipsam, odit, quia fugit alias error eum excepturi, cupiditate repellendus illum voluptatem illo. Repudiandae exercitationem, officia dolore commodi perferendis? Quisquam alias, deserunt magni excepturi, mollitia architecto necessitatibus aperiam accusantium, possimus voluptatum ab dolorum perferendis beatae.
+			.review__content__item#tab3
+				.review__content__img.d-table-top
+					div(style="background-image: url(http://via.placeholder.com/130x150)") 
+				.review__content__text.text-block.d-table-top
+					p
+						|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati nemo at quas aliquid, repellendus odit ducimus, dolore quia voluptates, praesentium. Cupiditate rerum nihil odio neque ipsa, alias et nemo.
+			.review__content__item#tab4
+				.review__content__img.d-table-top
+					div(style="background-image: url(http://via.placeholder.com/130x150)") 
+				.review__content__text.text-block.d-table-top
+					p
+						|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptatum libero voluptates non ullam? Recusandae veniam accusamus consequatur doloremque atque!
 
 		.visible-md
 			.mobile-review
