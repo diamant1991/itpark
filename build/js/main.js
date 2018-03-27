@@ -26,11 +26,11 @@ $('img.svg').each(function () {
 });
 
 $('.hamburger-box').click(function (e) {
-  $('.mobile-panel').show();
+  $('.mobile-panel').addClass('is-visible');
 });
 
 $('.close-panel').click(function (e) {
-  $('.mobile-panel').hide();
+  $('.mobile-panel').removeClass('is-visible');
 });
 
 if (window.matchMedia('(min-width: 768px)').matches) {

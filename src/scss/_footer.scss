@@ -29,6 +29,10 @@
 
 	a{
 		color: $blue;
+
+		&:hover{
+			border-bottom: 1px solid;
+		}
 	}
 }
 
@@ -38,4 +42,7 @@
   background: #333;
   border-radius: 0;
   fill: #fff !important;
+}
+.likely-big .likely__button{
+	font-size: 16px;
 }
