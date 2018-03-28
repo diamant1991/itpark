@@ -15,14 +15,12 @@
 
 			&:hover{
 				.calendar-icon{
-					path{
-						fill: $darkred;
-					}
+					background: url(../images/calendar-red.svg)no-repeat;
+					background-size: contain;
 				}
 				.bot-icon{
-					path{
-						fill: $darkred;
-					}
+					background: url(../images/normspasibot-red.svg)no-repeat;
+					background-size: contain;
 				}
 			}
 
@@ -114,10 +112,10 @@
 		}
 		a{
 			color: $blue;
-			border-bottom: 1px dotted rgba(255,255,255,0.5);
+			border-bottom: 1px dotted rgba(0, 194, 255, 0.5);
 
 			&:hover{
-				color: $darkred;
+				border-bottom: 1px dotted rgba(0, 194, 255, 1);
 			}
 		}
 	}
@@ -125,18 +123,14 @@
 .calendar-icon{
 	width: 45px;
 	height: 47px;
-
-	path{
-		fill: #fff;
-	}
+	background: url(../images/calendar-white.svg)no-repeat;
+	background-size: contain;
 }
 .bot-icon{
 	width: 43px;
 	height: 43px;
-
-	path{
-		fill: #fff;
-	}
+	background: url(../images/normspasibot-white.svg)no-repeat;
+	background-size: contain;
 }
 .video-background {
 	 position: absolute;
@@ -265,10 +259,10 @@
 
 	a{
 		color: $blue;
-		border-bottom: 1px dotted rgba(255,255,255,0.5);
+		border-bottom: 1px dotted rgba(0, 194, 255, 0.5);
 
 		&:hover{
-			color: #d0021b;
+			border-bottom: 1px dotted rgba(0, 194, 255, 1);
 		}
 	}
 }

@@ -1239,10 +1239,14 @@ img {
     padding-left: 15px; }
   .top-block__link__item {
     font-size: 18px; }
-    .top-block__link__item:hover .calendar-icon path {
-      fill: #d0021b; }
-    .top-block__link__item:hover .bot-icon path {
-      fill: #d0021b; }
+    .top-block__link__item:hover .calendar-icon {
+      background: url(../images/calendar-red.svg) no-repeat;
+      -moz-background-size: contain;
+           background-size: contain; }
+    .top-block__link__item:hover .bot-icon {
+      background: url(../images/normspasibot-red.svg) no-repeat;
+      -moz-background-size: contain;
+           background-size: contain; }
     .top-block__link__item a {
       color: #fff; }
       .top-block__link__item a:hover {
@@ -1310,21 +1314,23 @@ img {
         margin-left: 25px; }
     .nav__menu a {
       color: #00c2ff;
-      border-bottom: 1px dotted rgba(255, 255, 255, 0.5); }
+      border-bottom: 1px dotted rgba(0, 194, 255, 0.5); }
       .nav__menu a:hover {
-        color: #d0021b; }
+        border-bottom: 1px dotted #00c2ff; }
 
 .calendar-icon {
   width: 45px;
-  height: 47px; }
-  .calendar-icon path {
-    fill: #fff; }
+  height: 47px;
+  background: url(../images/calendar-white.svg) no-repeat;
+  -moz-background-size: contain;
+       background-size: contain; }
 
 .bot-icon {
   width: 43px;
-  height: 43px; }
-  .bot-icon path {
-    fill: #fff; }
+  height: 43px;
+  background: url(../images/normspasibot-white.svg) no-repeat;
+  -moz-background-size: contain;
+       background-size: contain; }
 
 .video-background {
   position: absolute;
@@ -1490,9 +1496,9 @@ img {
     margin-top: 15px; }
   .mobile-panel__menu a {
     color: #00c2ff;
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.5); }
+    border-bottom: 1px dotted rgba(0, 194, 255, 0.5); }
     .mobile-panel__menu a:hover {
-      color: #d0021b; }
+      border-bottom: 1px dotted #00c2ff; }
 
 .close-panel {
   position: absolute;
@@ -1583,8 +1589,8 @@ video {
     font-family: "AvenirNextCyrBold";
     padding: 10px; }
     .btn--blue:hover {
-      background: #00c2ff;
-      color: #fff; }
+      border-color: #d0021b;
+      color: #d0021b; }
 
 .service {
   padding: 50px 0; }
@@ -1710,11 +1716,12 @@ video {
   padding: 100px 0;
   color: #666; }
 
-.sk__icon {
-  width: 140px; }
-
-.sk__text {
-  padding-left: 15px; }
+.sk {
+  max-width: 730px; }
+  .sk__icon {
+    width: 140px; }
+  .sk__text {
+    padding-left: 15px; }
 
 .d-table-bottom {
   display: table-cell;
@@ -1741,10 +1748,13 @@ video {
       text-decoration: underline; }
   .event__link__item:hover .link {
     color: #d0021b; }
-  .event__link__item:hover .svg path,
-  .event__link__item:hover .svg g path {
-    fill: #d0021b;
-    stroke: #d0021b; }
+  .event__link__item:hover .placeholder-img {
+    background: url(../images/placeholder-red.svg) no-repeat;
+    -moz-background-size: contain;
+         background-size: contain; }
+  .event__link__item:hover .svg path {
+    stroke: #d0021b;
+    fill: #d0021b; }
   .event__link__item--last {
     position: absolute;
     z-index: 2;
@@ -1764,9 +1774,12 @@ video {
     fill: #666; }
 
 .placeholder-img {
-  width: 170px;
-  height: 155px;
-  margin-left: -25px; }
+  width: 160px;
+  height: 150px;
+  margin-left: -15px;
+  background: url(../images/placeholder_.svg) no-repeat;
+  -moz-background-size: contain;
+       background-size: contain; }
 
 .develop {
   padding: 50px 0; }
@@ -1957,7 +1970,11 @@ video {
   .top-block__title h1 {
     max-width: 750px; }
   header.is-fixed .phone {
-    display: none !important; }
+    font-size: 14px; }
+  header.is-fixed .nav__menu {
+    font-size: 14px; }
+  header.is-fixed .nav {
+    top: -30px !important; }
   .nav__menu li + li {
     margin-left: 15px; }
   .top-block__title {
@@ -2071,8 +2088,7 @@ video {
     position: static; }
   .event__link__item {
     float: left;
-    width: 50%;
-    text-align: center; }
+    width: 50%; }
   .event {
     padding-bottom: 0; }
   .event-calendar {
@@ -2119,7 +2135,7 @@ video {
       display: inline; }
     header.is-fixed .nav {
       display: inline-block;
-      top: -34px;
+      top: -32px;
       margin-left: 60px; }
     header.is-fixed .logo {
       margin-top: 3px; } }
@@ -2127,6 +2143,20 @@ video {
 @media (max-width: 767px) {
   .hidden-xs {
     display: none; }
+  .event__link__name {
+    height: 50px; }
+  .likely-big .likely__icon {
+    width: 25px;
+    height: 23px; }
+  .likely-big .likely__button,
+  .likely-big .likely__counter {
+    font-size: 12px; }
+  .likely-big .likely__widget {
+    height: 23px;
+    line-height: 20px; }
+  .likely-big svg {
+    width: 16px;
+    height: 16px; }
   h1 {
     font-size: 32px; }
   .business-small-title {
@@ -2222,7 +2252,8 @@ video {
     position: static;
     text-align: left; }
     .service__descr > div {
-      padding: 0 5px; }
+      padding: 0 5px;
+      width: 100%; }
   .btn {
     padding-top: 14px;
     padding-bottom: 14px; }

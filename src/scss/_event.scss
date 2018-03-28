@@ -30,11 +30,14 @@
 				.link{
 					color: $darkred;
 				}
+				.placeholder-img{
+					background: url(../images/placeholder-red.svg)no-repeat;
+					background-size: contain;
+				}
 				.svg{
-					path,
-					g path{
-						fill: $darkred;
+					path{
 						stroke: $darkred;
+						fill: $darkred;
 					}
 				}
 			}
@@ -63,7 +66,9 @@
 	}
 }
 .placeholder-img {
-  width: 170px;
-  height: 155px;
-  margin-left: -25px;
+  width: 160px;
+  height: 150px;
+  margin-left: -15px;
+  background: url(../images/placeholder_.svg)no-repeat;
+  background-size: contain;
  }

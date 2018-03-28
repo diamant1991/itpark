@@ -62,5 +62,15 @@ $('.review__tab__item').click(function (e) {
   $('' + tab).addClass('active');
 });
 
+$('.mobile-tab-item').click(function (event) {
+  var mobReview = $(this).next();
+  if (mobReview.is(':hidden')) {
+    $('.review__content').slideUp(250);
+    mobReview.slideDown(250);
+  } else {
+    mobReview.slideUp(250);
+  }
+});
+
 }());
 //# sourceMappingURL=main.js.map

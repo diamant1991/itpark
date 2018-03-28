@@ -108,7 +108,13 @@
 		max-width: 750px;
 	}
 	header.is-fixed .phone{
-		display: none !important;
+		font-size: 14px;
+	}
+	header.is-fixed .nav__menu{
+		font-size: 14px;
+	}
+	header.is-fixed .nav{
+		top: -30px !important;
 	}
 	.nav__menu li + li{
 		margin-left: 15px;
@@ -285,7 +291,6 @@
 	.event__link__item{
 		float: left;
 		width: 50%;
-		text-align: center;
 	}
 	.event{
 		padding-bottom: 0;
@@ -349,7 +354,7 @@
 			}
 			.nav{
 				display: inline-block;
-		    top: -34px;
+		    top: -32px;
 		    margin-left: 60px;
 			}
 			.logo{
@@ -361,6 +366,25 @@
 @media(max-width: 767px){
 	.hidden-xs{
 		display: none;
+	}
+	.event__link__name{
+		height: 50px;
+	}
+	.likely-big .likely__icon{
+		width: 25px;
+		height: 23px;
+	}
+	.likely-big .likely__button,
+	.likely-big .likely__counter{
+		font-size: 12px;
+	}
+	.likely-big .likely__widget{
+		height: 23px;
+		line-height: 20px;
+	}
+	.likely-big svg{
+		width: 16px;
+		height: 16px;
 	}
 	h1{
 		font-size: 32px;
@@ -504,6 +528,7 @@
 
 		> div{
 			padding: 0 5px;
+			width: 100%;
 		}
 	}
 	.btn{
